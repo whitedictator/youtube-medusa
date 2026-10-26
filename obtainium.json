@@ -2,5 +2,9 @@
   "id": "local.rvxtv.youtube",
   "url": "https://github.com/younesabazid89/youtube-medusa",
   "author": "younesabazid89",
-  "name": "YouTube Medusa"
+  "name": "YouTube Medusa",
+  "additionalSettings": {
+    "apkFilterRegEx": "-universal\\.apk$",
+    "appId": "local.rvxtv.youtube"
+  }
 }

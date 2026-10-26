@@ -1,33 +1,55 @@
 # YouTube Medusa
 
-Экспериментальный модифицированный клиент YouTube для Android TV с управлением пультом.
+YouTube Medusa brings the customization spirit of ReVanced and RVX to Android TV, with a familiar TV interface and controls designed for your remote. Skip sponsored segments, listen to translated videos, and recover from selected connection issues without leaving the player.
 
-## Скачать
+## Key features
 
-[Последний релиз](https://github.com/younesabazid89/youtube-medusa/releases/latest)
+- **SponsorBlock integration:** automatically skip community-marked sponsorships, with configurable handling of intros, outros, self-promotion and other segment categories. Skipping also applies when seeking back into a marked segment.
+- **Ad controls:** filter supported video-ad data and hide promotional elements. Effectiveness depends on YouTube's current delivery behavior.
+- **Yandex-powered dubbing:** select **Russian or English** directly from the TV player, next to the subtitles control. Adjust original and translated audio volumes, with automatic source-language detection.
+- **Medusa Fix:** an optional connection-recovery mode that automatically tries alternative connection tactics and remembers successful ones. It can help with selected loading and playback problems and applies only to this app's connections, without a device-wide VPN.
+- **TV-first settings:** a dedicated Medusa section in YouTube TV settings, navigable with a remote. Medusa menus use Russian on Russian-language systems and English otherwise; YouTube keeps its own language settings.
+- **Return YouTube Dislike integration:** display community-provided dislike estimates.
+- **Account support through compatible microG:** sign in on supported devices without standard Google services. microG is installed separately.
 
-Один APK с ARM32 (armeabi-v7a) и ARM64 (arm64-v8a), Android 7+. Пакет `local.rvxtv.youtube`. Неофициальный проект, не связан с Google или Яндексом.
+## Dubbing languages
 
-## Возможности
+The Yandex/VOT translation backend supports source languages including **English, Russian, German, French, Spanish, Italian, Chinese, Japanese, Korean and Arabic**. Medusa offers **Russian and English as dubbing targets**. Arabic input relies on automatic language detection; it is not an Arabic output voice option.
 
-- Medusa Fix — встроенный механизм попытки улучшить загрузку и воспроизведение; обрабатывает соединения этого приложения, не создаёт VPN устройства.
-- SponsorBlock — пропуск размеченных сообществом интеграций автора.
-- Ручной дубляж Яндекса на русский и английский, зависящий от доступности сервиса и конкретного видео.
-- Настройки Medusa в интерфейсе YouTube TV, управление пультом.
-- Меню Medusa на русском при русском языке системы, иначе на английском.
+Availability depends on the source video, language pair and translation service. Russian and English output have been tested on our stand; not every input/output pair has been independently verified. See the upstream [VOT language support table](https://github.com/ilyhalight/voice-over-translation/blob/master/LANG_SUPPORT.md).
 
-Дубляж выключен по умолчанию. Medusa Fix включён по умолчанию; при обновлении сохраняется выбор пользователя. Для входа без сервисов Google нужен совместимый microG; этот релиз не содержит его установщик.
+Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Обновления через Obtainium
+## Downloads
 
-Добавьте в Obtainium адрес `https://github.com/younesabazid89/youtube-medusa`. Obtainium устанавливается отдельно и получает APK из Releases этого репозитория. Регистрация в каталоге Obtainium Apps для этого не требуется.
+[Download the latest release](https://github.com/younesabazid89/youtube-medusa/releases/latest)
 
-## Совместимость 79.1
+| APK | Choose this for |
+| --- | --- |
+| **Universal** | Both ARM32 and ARM64 in one download |
+| **ARM32 / armeabi-v7a** | TVs with a 32-bit Android system, including the older Hi compatibility profile |
+| **ARM64 / arm64-v8a** | TVs with a 64-bit Android system |
 
-Сохранены функции test79. Упаковка ARM32-предшественника установилась на Hi VHIX-55U169TSY с Android 9. Универсальный 79.1 проверен на Android 13 ARM64-стенде: обновление поверх test79, главная страница, изображения и видео. Установка именно универсального APK на Hi и работа на всех моделях пока не подтверждены.
+All three APKs contain the same features and use compatible packaging, the same package name (`local.rvxtv.youtube`) and signing certificate. Install the appropriate APK over your existing Medusa installation to retain settings.
 
-Подписи v1/v2/v3, targetSdk 28, сжатые библиотеки с извлечением системным установщиком. Перед обновлением удалять приложение не требуется.
+Requires Android 7 or newer on a supported ARM device. Architecture depends on the Android system, not just the processor model.
 
-## Источники и благодарности
+## Update with Obtainium
 
-База — официальный YouTube TV 7.24.300. Интеграции опираются на ReVanced/anddea, VOT, SponsorBlock, Return YouTube Dislike, ByeDPI и xHook. Лицензии компонентов находятся в APK и архиве исходников дополнений. Собственные изменения не меняют права на исходный клиент и сторонние компоненты.
+Install [Obtainium](https://obtainium.imranr.dev/) separately, then choose **one** configuration below. Each configuration keeps updates on your selected APK variant.
+
+- [Add Universal to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-universal%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+- [Add ARM32 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-armeabi-v7a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+- [Add ARM64 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-arm64-v8a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+
+You can also add this repository URL manually: `https://github.com/younesabazid89/youtube-medusa`. Choose the matching APK when prompted.
+
+## Compatibility and release status
+
+Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Universal 79.1 passed an update installation, home-page/image loading and video-playback checks on an Android 13 ARM64 test device. Universal and ARM64-only installation on physical models still need wider testing; compatibility with every TV is not guaranteed.
+
+## Credits
+
+Inspired by **ReVanced** and **ReVanced Extended (RVX)**. Built on YouTube TV 7.24.300, with integrations drawing on anddea, VOT, SponsorBlock, Return YouTube Dislike, ByeDPI and xHook. Component notices are included in the APK and patch-source archive.
+
+This project is not affiliated with or endorsed by Google, YouTube, Yandex, ReVanced or RVX. Third-party software and services retain their respective rights and terms.
