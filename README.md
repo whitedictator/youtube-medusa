@@ -21,7 +21,7 @@ Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve
 
 ## Downloads
 
-[Download the latest release](https://github.com/younesabazid89/youtube-medusa/releases/latest)
+[Download the latest release](https://github.com/whitedictator/youtube-medusa/releases/latest)
 
 | APK | Choose this for |
 | --- | --- |
@@ -44,7 +44,7 @@ Requires Android 7 or newer on a supported ARM device. Architecture depends on t
 1. Download and install Obtainium on your TV. Choose an Obtainium APK compatible with your device.
 2. Open Obtainium, select **Add App**, and paste this repository URL:
 
-   `https://github.com/younesabazid89/youtube-medusa`
+   `https://github.com/whitedictator/youtube-medusa`
 
 3. Confirm **Add**, then select **Install**. If Android asks, allow Obtainium to install unknown apps.
 4. If asked to choose a Medusa APK, use the table below. Install only one variant.
@@ -67,9 +67,9 @@ Install updates over the existing Medusa app. **Do not uninstall it first:** you
 
 If Obtainium is already installed, open **one** link below on the same device and confirm the import. These configurations filter future releases to your chosen APK variant:
 
-- [Add Universal to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-universal%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
-- [Add ARM32 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-armeabi-v7a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
-- [Add ARM64 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-arm64-v8a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+- [Add Universal to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-universal%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+- [Add ARM32 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-armeabi-v7a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
+- [Add ARM64 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-arm64-v8a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
 
 If your TV cannot open these links, use the manual repository-URL steps above and choose the matching APK when prompted.
 
