@@ -33,15 +33,45 @@ All three APKs contain the same features and use compatible packaging, the same 
 
 Requires Android 7 or newer on a supported ARM device. Architecture depends on the Android system, not just the processor model.
 
-## Update with Obtainium
+<a id="update-with-obtainium"></a>
 
-Install [Obtainium](https://obtainium.imranr.dev/) separately, then choose **one** configuration below. Each configuration keeps updates on your selected APK variant.
+## Install and update with Obtainium
+
+[Obtainium](https://github.com/ImranR98/Obtainium/releases/latest) installs Medusa from this repository's GitHub releases and checks for future updates.
+
+### Install Medusa
+
+1. Download and install Obtainium on your TV. Choose an Obtainium APK compatible with your device.
+2. Open Obtainium, select **Add App**, and paste this repository URL:
+
+   `https://github.com/younesabazid89/youtube-medusa`
+
+3. Confirm **Add**, then select **Install**. If Android asks, allow Obtainium to install unknown apps.
+4. If asked to choose a Medusa APK, use the table below. Install only one variant.
+
+| Medusa APK | Which one should I choose? |
+| --- | --- |
+| **Universal** | Contains ARM32 and ARM64. Choose this if you are unsure which ARM architecture your TV uses. |
+| **armeabi-v7a (ARM32)** | For TVs running a 32-bit Android system. Uses the compatibility packaging that installed on the older Hi Android 9 TV. |
+| **arm64-v8a (ARM64)** | For TVs running a 64-bit Android system. |
+
+A 64-bit processor does not necessarily mean the TV runs 64-bit Android. All variants provide the same Medusa features.
+
+### Keep Medusa updated
+
+Keep Medusa in Obtainium's app list. Select **Check for Updates**, then **Update** when a newer version is available. You can also enable background update checks in Obtainium's settings; their availability depends on your TV's background-app restrictions.
+
+Install updates over the existing Medusa app. **Do not uninstall it first:** your settings are preserved during a normal update. Keep the same APK variant for subsequent updates.
+
+### One-tap setup by APK variant
+
+If Obtainium is already installed, open **one** link below on the same device and confirm the import. These configurations filter future releases to your chosen APK variant:
 
 - [Add Universal to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-universal%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
 - [Add ARM32 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-armeabi-v7a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
 - [Add ARM64 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fyounesabazid89%2Fyoutube-medusa%22%2C%22author%22%3A%22younesabazid89%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-arm64-v8a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
 
-You can also add this repository URL manually: `https://github.com/younesabazid89/youtube-medusa`. Choose the matching APK when prompted.
+If your TV cannot open these links, use the manual repository-URL steps above and choose the matching APK when prompted.
 
 ## Compatibility and release status
 
