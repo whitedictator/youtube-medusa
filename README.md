@@ -10,6 +10,7 @@ YouTube Medusa brings the customization spirit of ReVanced and RVX to Android TV
 - **Medusa Fix:** an optional connection-recovery mode that automatically tries alternative connection tactics and remembers successful ones. It can help with selected loading and playback problems and applies only to this app's connections.
 - **TV-first settings:** a dedicated Medusa section in YouTube TV settings, navigable with a remote. Medusa menus use Russian on Russian-language systems and English otherwise; YouTube keeps its own language settings.
 - **Return YouTube Dislike integration:** display community-provided dislike estimates.
+- **Built-in updates:** check GitHub Releases from Medusa, download the correct APK variant and install verified updates while keeping your settings.
 
 ## Dubbing languages
 
@@ -33,49 +34,31 @@ All three APKs contain the same features and use compatible packaging, the same 
 
 Requires Android 7 or newer on a supported ARM device. Architecture depends on the Android system, not just the processor model.
 
-<a id="update-with-obtainium"></a>
+## Installation and built-in updates
 
-## Install and update with Obtainium
+### First installation
 
-[Obtainium](https://github.com/ImranR98/Obtainium/releases/latest) installs Medusa from this repository's GitHub releases and checks for future updates.
+1. Open the [latest release](https://github.com/whitedictator/youtube-medusa/releases/latest) and download **one** APK: Universal, armeabi-v7a (ARM32), or arm64-v8a (ARM64). Use Universal if you are unsure which ARM architecture your TV uses.
+2. Transfer the APK to your TV or download it on the TV. Open it with your file manager and allow installation from that source if Android asks.
+3. Install Medusa. If you already use an older version, install over it to keep your settings; do not uninstall first.
 
-### Install Medusa
+### Update directly from Medusa
 
-1. Download and install Obtainium on your TV. Choose an Obtainium APK compatible with your device.
-2. Open Obtainium, select **Add App**, and paste this repository URL:
+Starting with **version 80**, an updater is included in the app.
 
-   `https://github.com/whitedictator/youtube-medusa`
+1. Open **Settings → YouTube Medusa → Updates**.
+2. Select **Check for updates**. Medusa also checks automatically after app launch; you can turn this option off on the update screen.
+3. When a newer release is available, select **Download update**. Medusa keeps your installed APK variant: Universal, ARM32 or ARM64.
+4. After verification, select **Install update**. If Android asks, allow Medusa to install apps from this source, then return to the app.
+5. Confirm **Update** in the Android system installer. Your settings are retained.
 
-3. Confirm **Add**, then select **Install**. If Android asks, allow Obtainium to install unknown apps.
-4. If asked to choose a Medusa APK, use the table below. Install only one variant.
+Medusa checks the download checksum, package identity, version and signing certificate before handing the APK to Android. Installation requires your confirmation.
 
-| Medusa APK | Which one should I choose? |
-| --- | --- |
-| **Universal** | Contains ARM32 and ARM64. Choose this if you are unsure which ARM architecture your TV uses. |
-| **armeabi-v7a (ARM32)** | For TVs running a 32-bit Android system. Uses the compatibility packaging that installed on the older Hi Android 9 TV. |
-| **arm64-v8a (ARM64)** | For TVs running a 64-bit Android system. |
-
-A 64-bit processor does not necessarily mean the TV runs 64-bit Android. All variants provide the same Medusa features.
-
-### Keep Medusa updated
-
-Keep Medusa in Obtainium's app list. Select **Check for Updates**, then **Update** when a newer version is available. You can also enable background update checks in Obtainium's settings; their availability depends on your TV's background-app restrictions.
-
-Install updates over the existing Medusa app. **Do not uninstall it first:** your settings are preserved during a normal update. Keep the same APK variant for subsequent updates.
-
-### One-tap setup by APK variant
-
-If Obtainium is already installed, open **one** link below on the same device and confirm the import. These configurations filter future releases to your chosen APK variant:
-
-- [Add Universal to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-universal%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
-- [Add ARM32 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-armeabi-v7a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
-- [Add ARM64 to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22local.rvxtv.youtube%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwhitedictator%2Fyoutube-medusa%22%2C%22author%22%3A%22whitedictator%22%2C%22name%22%3A%22YouTube%20Medusa%22%2C%22additionalSettings%22%3A%7B%22apkFilterRegEx%22%3A%22-arm64-v8a%5C%5C.apk%24%22%2C%22appId%22%3A%22local.rvxtv.youtube%22%7D%7D)
-
-If your TV cannot open these links, use the manual repository-URL steps above and choose the matching APK when prompted.
+**Upgrading from 79.1 or earlier?** Install version 80 manually once using the APK from GitHub Releases. After that, use the built-in updater for future published releases.
 
 ## Compatibility and release status
 
-Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Universal 79.1 passed an update installation, home-page/image loading and video-playback checks on an Android 13 ARM64 test device. Universal and ARM64-only installation on physical models still need wider testing; compatibility with every TV is not guaranteed.
+Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Version 80 retains that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of version 80 is still ongoing.
 
 ## Credits
 
