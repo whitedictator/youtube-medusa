@@ -20,6 +20,10 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
+## Current release: 80.1
+
+Version 80.1 is a maintenance release for testing the built-in update from version 80. It increments the Android version code; playback features are unchanged. On version 80, open **Settings → YouTube Medusa → Updates → Check for updates**.
+
 ## Downloads
 
 [Download the latest release](https://github.com/whitedictator/youtube-medusa/releases/latest)
@@ -54,11 +58,11 @@ Starting with **version 80**, an updater is included in the app.
 
 Medusa checks the download checksum, package identity, version and signing certificate before handing the APK to Android. Installation requires your confirmation.
 
-**Upgrading from 79.1 or earlier?** Install version 80 manually once using the APK from GitHub Releases. After that, use the built-in updater for future published releases.
+**Upgrading from 79.1 or earlier?** Install the latest version manually once using the APK from GitHub Releases. After that, use the built-in updater for future published releases.
 
 ## Compatibility and release status
 
-Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Version 80 retains that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of version 80 is still ongoing.
+Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Versions 80 and 80.1 retain that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of the 80 → 80.1 update is ongoing.
 
 ## Credits
 
