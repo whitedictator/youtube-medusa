@@ -20,9 +20,9 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.1
+## Current release: 80.2
 
-Version 80.1 is a maintenance release for testing the built-in update from version 80. It increments the Android version code; playback features are unchanged. On version 80, open **Settings → YouTube Medusa → Updates → Check for updates**.
+Version 80.2 polishes native Medusa settings and the updater. The update screen checks when opened, shows download progress and opens Android's installer automatically after verification. An **Update Medusa** action is also available in the stock connection-error dialog, even when the YouTube page cannot load. Installation still requires Android confirmation. Release notes appear in the startup prompt and manual update screen. See [CHANGELOG.md](CHANGELOG.md) for the version history.
 
 ## Downloads
 
@@ -53,7 +53,7 @@ Starting with **version 80**, an updater is included in the app.
 1. Open **Settings → YouTube Medusa → Updates**.
 2. Select **Check for updates**. Medusa also checks automatically after app launch; you can turn this option off on the update screen.
 3. When a newer release is available, select **Download update**. Medusa keeps your installed APK variant: Universal, ARM32 or ARM64.
-4. After verification, select **Install update**. If Android asks, allow Medusa to install apps from this source, then return to the app.
+4. After download and verification, Android’s installer opens automatically. If installation was cancelled, select **Install update** to retry. If Android asks, allow Medusa to install apps from this source, then return to the app.
 5. Confirm **Update** in the Android system installer. Your settings are retained.
 
 Medusa checks the download checksum, package identity, version and signing certificate before handing the APK to Android. Installation requires your confirmation.
@@ -62,7 +62,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 ## Compatibility and release status
 
-Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Versions 80 and 80.1 retain that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of the 80 → 80.1 update is ongoing.
+Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Version 80.2 retains that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of version 80.2 is ongoing.
 
 ## Credits
 
