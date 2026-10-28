@@ -1,5 +1,16 @@
 # Changelog
 
+## 80.3 — 2026-10-28
+
+- Improve source-audio retrieval using the current signed-in YouTube session and the TV engine's transport.
+- Handle signature and rate-limiting parameters before downloading source audio; avoid using unprocessed player-response URLs as playable tracks.
+- Fall back to standard Yandex voices when expressive voices require an unavailable Yandex session.
+- Bound translation preparation and ignore stale results after a retry or video change.
+- Offer **Turn off and retry** or **Keep enabled** after a connection error when Medusa Fix is on. The setting changes only when you choose; prompts are limited to one per 30 minutes.
+- Add a Russian/English sign-in notice: **Yandex dubbing is not available in guest mode**.
+- Treat the welcome and sign-in screens as loaded pages, avoiding unnecessary startup reloads during sign-in.
+- Retain Universal, ARM32 and ARM64 compatibility packaging, the existing package identity and signing certificate.
+
 ## 80.2 — 2026-10-28
 
 - Fix initial and repeated native Medusa settings entry rendering and selection reset.

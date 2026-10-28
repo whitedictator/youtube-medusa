@@ -20,9 +20,13 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.2
+## Current release: 80.3
 
-Version 80.2 polishes native Medusa settings and the updater. The update screen checks when opened, shows download progress and opens Android's installer automatically after verification. An **Update Medusa** action is also available in the stock connection-error dialog, even when the YouTube page cannot load. Installation still requires Android confirmation. Release notes appear in the startup prompt and manual update screen. See [CHANGELOG.md](CHANGELOG.md) for the version history.
+Version 80.3 improves dubbing source-audio retrieval and compatibility with older Android TV systems. It can use your current signed-in YouTube session and the TV engine's transport, with corrected source URL handling and bounded preparation. Sign in to YouTube to use dubbing; guest mode is not supported. The sign-in screen includes a Russian/English reminder.
+
+If a connection fails while Medusa Fix is enabled, you can choose **Turn off and retry** or **Keep enabled**. Medusa does not turn Fix off automatically; the choice is yours. Repeated prompts are limited to one per 30 minutes. Saved preferences are preserved when updating.
+
+The built-in updater, release notes and update action on the connection-error screen remain available. See [CHANGELOG.md](CHANGELOG.md) for the full history.
 
 ## Downloads
 
@@ -62,10 +66,10 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 ## Compatibility and release status
 
-Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9. Version 80.2 retains that packaging. On the Android 13 ARM64 stand, the updater passed a real GitHub download, checksum/signature checks, user-confirmed system installation and settings-retention checks. Startup checks, Russian/English screens and remote navigation through the Medusa settings entry were also tested. Physical-TV testing of version 80.2 is ongoing.
+Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9; version 80.3 retains it. Android 9 ARM64 testing covers complete source-audio downloads and Russian/English translated audio with Medusa Fix enabled and disabled. Tests use an authenticated YouTube session; the detailed scope and limits are in the release's `validation-public.json`. Physical-TV validation remains ongoing.
 
 ## Credits
 
-Inspired by **ReVanced** and **ReVanced Extended (RVX)**. Built on YouTube TV 7.24.300, with integrations drawing on anddea, VOT, SponsorBlock, Return YouTube Dislike, ByeDPI and xHook. Component notices are included in the APK and patch-source archive.
+Inspired by **ReVanced** and **ReVanced Extended (RVX)**. Built on YouTube TV 7.24.300, with integrations drawing on anddea, VOT, SponsorBlock, Return YouTube Dislike, ByeDPI and xHook. The source player solver uses yt-dlp/ejs (Unlicense), Meriyah (ISC) and Astring (MIT). Component notices are included in the APK and patch-source archive.
 
 This project is not affiliated with or endorsed by Google, YouTube, Yandex, ReVanced or RVX. Third-party software and services retain their respective rights and terms.
