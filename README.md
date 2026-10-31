@@ -20,11 +20,13 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.5
+## Current release: 80.6
 
-Version 80.5 improves the Medusa settings menu and removes misleading Google Play services update prompts from optional legacy integrations. The Medusa section opens on Updates, with remote Back returning to the YouTube settings list. Settings rendering can retry after a failed draw instead of leaving the section incomplete.
+Version 80.6 adds **experimental AFR (automatic frame-rate matching)**, off by default. Enable it in **Settings → YouTube Medusa → AFR: match frame rate**. Medusa detects the video's frame rate and requests a compatible mode exposed by the firmware, preserving resolution. It restores the previous display request when disabled, on playback end or when the app moves to the background.
 
-Install over your existing Medusa app to preserve preferences. Built-in updates, dubbing, SponsorBlock and Medusa Fix remain available. See [CHANGELOG.md](CHANGELOG.md) for the release history.
+Fractional rates such as 23.976, 29.97 and 59.94 are distinguished from integer rates. Hardware and firmware support determine which display modes are actually available; physical fractional switching still needs TV testing. Brief display blanking may occur during a supported switch. The 80.5 menu and service-compatibility fixes remain included.
+
+Install over your existing Medusa to preserve preferences. See [CHANGELOG.md](CHANGELOG.md) for the release history.
 
 ## Downloads
 
@@ -66,7 +68,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.5, emulator checks cover the complete native Medusa menu, opening it with a remote and reopening it three times, plus legacy-service update resolution handling on Android 9 and Android 13. Previous 80.3 dubbing checks remain documented in that release; a full dubbing matrix was not repeated for this menu/service fix. See the release's `validation-public.json` for the exact scope and limits. Physical-TV validation remains ongoing.
+For 80.6, emulator checks cover the native AFR toggle with a remote, repeated settings entry, real decoder detection on a 30 fps video, 60 Hz mode acknowledgement, restoring original requests, and leaving unsupported fractional modes unchanged. Android 9 legacy-service regression checks passed. Both emulators expose only 1920×1080 at 60 Hz: physical fractional refresh-rate switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for scope and limits.
 
 ## Credits
 

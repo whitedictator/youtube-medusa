@@ -1,5 +1,16 @@
 # Changelog
 
+## 80.6 — 2026-10-31
+
+- Add experimental automatic frame-rate matching (AFR), **off by default**, in the native Medusa settings menu.
+- Detect frame rate from the video decoder, including 23.976, 29.97 and 59.94 fps, and request a compatible refresh rate exposed by the firmware without reducing resolution.
+- Respect Android's frame-rate matching policy where available; leave the display unchanged when no matching mode is supported.
+- Restore the previous display request when AFR is disabled, playback ends or the app moves to the background.
+- Preserve the settings and service-compatibility fixes from 80.5, existing preferences and update-compatible APK packaging.
+
+Physical fractional refresh-rate switching remains unverified; AFR is experimental and off by default.
+
+
 ## 80.5 — 2026-10-31
 
 - Keep Medusa settings rendering independent of private focus-reset helpers; retry if drawing has not completed.
