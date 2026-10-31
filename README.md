@@ -20,13 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.3
+## Current release: 80.5
 
-Version 80.3 improves dubbing source-audio retrieval and compatibility with older Android TV systems. It can use your current signed-in YouTube session and the TV engine's transport, with corrected source URL handling and bounded preparation. Sign in to YouTube to use dubbing; guest mode is not supported. The sign-in screen includes a Russian/English reminder.
+Version 80.5 improves the Medusa settings menu and removes misleading Google Play services update prompts from optional legacy integrations. The Medusa section opens on Updates, with remote Back returning to the YouTube settings list. Settings rendering can retry after a failed draw instead of leaving the section incomplete.
 
-If a connection fails while Medusa Fix is enabled, you can choose **Turn off and retry** or **Keep enabled**. Medusa does not turn Fix off automatically; the choice is yours. Repeated prompts are limited to one per 30 minutes. Saved preferences are preserved when updating.
-
-The built-in updater, release notes and update action on the connection-error screen remain available. See [CHANGELOG.md](CHANGELOG.md) for the full history.
+Install over your existing Medusa app to preserve preferences. Built-in updates, dubbing, SponsorBlock and Medusa Fix remain available. See [CHANGELOG.md](CHANGELOG.md) for the release history.
 
 ## Downloads
 
@@ -66,7 +64,9 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 ## Compatibility and release status
 
-Medusa is an experimental, unofficial project. The ARM32 compatibility packaging was successfully installed on a Hi VHIX-55U169TSY running Android 9; version 80.3 retains it. Android 9 ARM64 testing covers complete source-audio downloads and Russian/English translated audio with Medusa Fix enabled and disabled. Tests use an authenticated YouTube session; the detailed scope and limits are in the release's `validation-public.json`. Physical-TV validation remains ongoing.
+Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
+
+For 80.5, emulator checks cover the complete native Medusa menu, opening it with a remote and reopening it three times, plus legacy-service update resolution handling on Android 9 and Android 13. Previous 80.3 dubbing checks remain documented in that release; a full dubbing matrix was not repeated for this menu/service fix. See the release's `validation-public.json` for the exact scope and limits. Physical-TV validation remains ongoing.
 
 ## Credits
 

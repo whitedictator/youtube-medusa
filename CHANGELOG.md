@@ -1,5 +1,14 @@
 # Changelog
 
+## 80.5 — 2026-10-31
+
+- Keep Medusa settings rendering independent of private focus-reset helpers; retry if drawing has not completed.
+- Open the Medusa section on Updates instead of an empty-looking Back page. Remote Back returns to the YouTube settings list.
+- Remove misleading Google Play services install/update prompts from legacy optional-service checks, including stale update screens. Actual API errors and account-consent resolutions remain intact.
+- Preserve saved settings, native sign-in, dubbing, SponsorBlock, Medusa Fix and the existing update path.
+- Keep Universal, ARM32 and ARM64 packages with the older-TV compatibility packaging and the same signing certificate.
+
+
 ## 80.3 — 2026-10-28
 
 - Improve source-audio retrieval using the current signed-in YouTube session and the TV engine's transport.
