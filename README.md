@@ -20,13 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.6
+## Current release: 80.7
 
-Version 80.6 adds **experimental AFR (automatic frame-rate matching)**, off by default. Enable it in **Settings → YouTube Medusa → AFR: match frame rate**. Medusa detects the video's frame rate and requests a compatible mode exposed by the firmware, preserving resolution. It restores the previous display request when disabled, on playback end or when the app moves to the background.
+Version 80.7 adds an **AFR stats** button at the left of the native player controls. Select the ⓘ button to display video FPS measured from decoder timestamps, the current display resolution and refresh rate reported by Android, and AFR status. Select the same button again to hide the indicator. It is hidden by default and on a fresh app start.
 
-Fractional rates such as 23.976, 29.97 and 59.94 are distinguished from integer rates. Hardware and firmware support determine which display modes are actually available; physical fractional switching still needs TV testing. Brief display blanking may occur during a supported switch. The 80.5 menu and service-compatibility fixes remain included.
-
-Install over your existing Medusa to preserve preferences. See [CHANGELOG.md](CHANGELOG.md) for the release history.
+Statistics work even with AFR disabled, and do not toggle AFR or change display mode. AFR remains experimental and off by default; enable it separately in **Settings → YouTube Medusa → AFR: match frame rate**. Physical fractional switching still needs TV testing. Install over your existing Medusa to preserve settings. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Downloads
 
@@ -68,7 +66,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.6, emulator checks cover the native AFR toggle with a remote, repeated settings entry, real decoder detection on a 30 fps video, 60 Hz mode acknowledgement, restoring original requests, and leaving unsupported fractional modes unchanged. Android 9 legacy-service regression checks passed. Both emulators expose only 1920×1080 at 60 Hz: physical fractional refresh-rate switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for scope and limits.
+For 80.7, emulator checks cover player remote navigation, the statistics toggle and source-FPS/display-mode reporting. Android 9 checks cover read-only statistics while AFR is off and preservation of AFR restoration behavior. Both test displays expose only 1920×1080 at 60 Hz; physical fractional switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for exact checks.
 
 ## Credits
 

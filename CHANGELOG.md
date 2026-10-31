@@ -1,5 +1,14 @@
 # Changelog
 
+## 80.7 — 2026-11-01
+
+- Add an **AFR stats** button at the left of the native TV player controls. Press it again to hide the indicator.
+- Show the video cadence measured from decoder timestamps, the current display resolution and refresh rate reported by Android, and the AFR request/status separately.
+- Statistics also work with AFR disabled. Showing or hiding them does not toggle AFR or change the display mode.
+- Keep the diagnostic indicator hidden by default and reset it to hidden on a fresh app start.
+- Adapt player-button integration to the current YouTube TV controls while keeping Yandex dubbing beside captions.
+
+
 ## 80.6 — 2026-10-31
 
 - Add experimental automatic frame-rate matching (AFR), **off by default**, in the native Medusa settings menu.
