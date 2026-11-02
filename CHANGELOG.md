@@ -1,5 +1,15 @@
 # Changelog
 
+## 80.9 — 2026-11-02
+
+- Add video-codec selection in Settings → YouTube Medusa → Video codec: Auto (default), H.264 (AVC), VP9 and AV1.
+- Save the selected mode and offer a full app restart to apply it. Reject codecs unavailable on the device; leave audio codecs unchanged.
+- Show active, saved and actual video codecs in diagnostics. Suggest Auto after an explicit video-format error in manual mode.
+- Prepare the Medusa entry before revealing the native settings list.
+- Remove the extra dislike-count button; retain YouTube's standard like/dislike controls.
+
+Manual codec selection can limit quality and HDR. The Ugoos X3 black-screen report is not confirmed fixed. Returning from the codec popup can briefly restore the stock settings selection before Medusa redraws; that navigation issue remains under investigation.
+
 ## 80.8 — 2026-11-02
 
 - Add a gentle two-record TLS fallback after the existing connection tactics; preserve the existing order and saved successful choices.

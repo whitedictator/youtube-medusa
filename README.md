@@ -9,7 +9,7 @@ YouTube Medusa brings the customization spirit of ReVanced and RVX to Android TV
 - **Yandex-powered dubbing:** select **Russian or English** directly from the TV player, next to the subtitles control. Adjust original and translated audio volumes, with automatic source-language detection.
 - **Medusa Fix:** an optional connection-recovery mode that automatically tries alternative connection tactics and remembers successful ones. It can help with selected loading and playback problems and applies only to this app's connections.
 - **TV-first settings:** a dedicated Medusa section in YouTube TV settings, navigable with a remote. Medusa menus use Russian on Russian-language systems and English otherwise; YouTube keeps its own language settings.
-- **Return YouTube Dislike integration:** display community-provided dislike estimates.
+- **Video codec selection:** Auto, H.264 (AVC), VP9 or AV1, subject to device decoder support. The standard YouTube like/dislike controls are retained.
 - **Built-in updates:** check GitHub Releases from Medusa, download the correct APK variant and install verified updates while keeping your settings.
 
 ## Dubbing languages
@@ -20,11 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.8
+## Current release: 80.9
 
-Version 80.8 improves **Medusa Fix** with a gentle TLS fallback, stronger video-connection learning and bounded recovery from prolonged playback stalls. Existing tactics and remembered successful choices are retained. Confirmed failures remove saved priority so another tactic can be selected and remembered. Slow incoming media traffic, pause and seeking do not trigger recovery; a brief notice appears when an intervention actually happens.
+Choose **Auto, H.264 (AVC), VP9 or AV1** in **Settings → YouTube Medusa → Video codec**. Auto remains the default. Save your choice and use the offered restart to apply it. Unsupported codecs are rejected; audio codecs are unchanged. Manual selection may limit video quality and HDR.
 
-The YouTube activity now hides system bars on boxes running ordinary Android, without changing video aspect ratio. The player also retains the left-side **ⓘ AFR stats** toggle from 80.7. Statistics are hidden by default; AFR remains experimental and off by default. Install over your existing Medusa to retain preferences. See [CHANGELOG.md](CHANGELOG.md).
+The duplicate dislike button has been removed, leaving YouTube's standard rating controls. The Medusa entry is prepared before the settings list is revealed. A temporary selection change when returning from the codec popup remains under investigation; this release does not claim to fix that navigation issue. Install over your existing Medusa to retain preferences. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Downloads
 
@@ -66,7 +66,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.8, deterministic and Android socket-fixture tests cover tactic replacement, bounded stall recovery, protection of slow media traffic and unchanged TLS handshake bytes. Ordinary-network emulator playback checks passed on Android 9 and Android 13 during development. These checks do not demonstrate bypass effectiveness: the new fallback still needs testing on restricted networks. The Ugoos X3 black-screen report is not confirmed fixed. Physical fractional AFR switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for exact scope.
+For 80.9, codec capability filtering was checked on Android 9 and Android 13, with audio codec availability unchanged. Actual playback in Auto, AVC, VP9 and AV1 modes, the restart flow and the single-dislike player controls were checked on the Android 13 stand. Android 9 AV1 absence was detected correctly. The codec-popup Back navigation issue is not resolved. The Ugoos X3 black-screen report is not confirmed fixed; physical fractional AFR switching, HDR and HDMI receiver behavior remain unverified. See `validation-public.json` for the exact scope.
 
 ## Credits
 
