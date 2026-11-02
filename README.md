@@ -20,11 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.9
+## Current release: 80.10
 
-Choose **Auto, H.264 (AVC), VP9 or AV1** in **Settings → YouTube Medusa → Video codec**. Auto remains the default. Save your choice and use the offered restart to apply it. Unsupported codecs are rejected; audio codecs are unchanged. Manual selection may limit video quality and HDR.
+**medusa settings layout improvement**
 
-The duplicate dislike button has been removed, leaving YouTube's standard rating controls. The Medusa entry is prepared before the settings list is revealed. A temporary selection change when returning from the codec popup remains under investigation; this release does not claim to fix that navigation issue. Install over your existing Medusa to retain preferences. See [CHANGELOG.md](CHANGELOG.md).
+Medusa settings are grouped by function, with option values displayed directly in the native right pane. Back returns to the setting you were editing, and each category remembers its position. The updater uses a dark TV layout with clear white focus highlighting and no colored outline. Install over your existing Medusa to keep your settings. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Downloads
 
@@ -66,7 +66,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.9, codec capability filtering was checked on Android 9 and Android 13, with audio codec availability unchanged. Actual playback in Auto, AVC, VP9 and AV1 modes, the restart flow and the single-dislike player controls were checked on the Android 13 stand. Android 9 AV1 absence was detected correctly. The codec-popup Back navigation issue is not resolved. The Ugoos X3 black-screen report is not confirmed fixed; physical fractional AFR switching, HDR and HDMI receiver behavior remain unverified. See `validation-public.json` for the exact scope.
+For 80.10, remote-navigation tests on the Android 13 stand covered inline on/off choices, Russian/English target-language selection, saved values, return to the same setting, category re-entry and first-display settings preparation. Updater tests covered focused actions and navigation between release notes and the action column. Physical-TV testing of this layout remains outstanding. The Ugoos X3 playback report and physical fractional AFR/HDR compatibility are not claimed fixed. See `validation-public.json` for the exact scope.
 
 ## Credits
 

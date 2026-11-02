@@ -1,5 +1,9 @@
 # Changelog
 
+## 80.10 — 2026-11-02
+
+- medusa settings layout improvement
+
 ## 80.9 — 2026-11-02
 
 - Add video-codec selection in Settings → YouTube Medusa → Video codec: Auto (default), H.264 (AVC), VP9 and AV1.
