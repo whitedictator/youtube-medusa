@@ -1,5 +1,16 @@
 # Changelog
 
+## 80.14 — 2026-11-03
+
+- Improve Medusa Fix route learning and preference selection; retain proven server-specific exceptions and reassess routes after failures.
+- Restore interface icons by including YouTube TV font servers in Medusa Fix connection handling.
+- Remove SponsorBlock startup waiting from Shorts and prepare up to two upcoming Shorts when the current video has enough buffered data, respecting native low-memory safeguards.
+- Show one focused “Skip segment” button for 10 seconds when SponsorBlock is set to offer a skip. OK skips the segment and playback continues.
+- Fix unreadable SponsorBlock notifications while retaining the native Android appearance.
+- Keep the Medusa settings entry in the main settings menu only. Ordinary videos retain SponsorBlock data loading and segment skipping after leaving Shorts.
+
+Shorts preparation remains bounded; fast scrolling can still require a cold load. Verified ordinary-video SponsorBlock operation after leaving Shorts.
+
 ## 80.10 — 2026-11-02
 
 - medusa settings layout improvement

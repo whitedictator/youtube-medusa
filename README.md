@@ -20,11 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.10
+## Current release: 80.14
 
-**medusa settings layout improvement**
+Improved Medusa Fix route selection, restored interface icons, smoother preparation of upcoming Shorts, and a focused SponsorBlock skip offer. Shorts start without waiting for SponsorBlock; ordinary videos retain their SponsorBlock loading and skipping behavior after leaving Shorts. Rapid scrolling can still outrun preparation. See [CHANGELOG.md](CHANGELOG.md).
 
-Medusa settings are grouped by function, with option values displayed directly in the native right pane. Back returns to the setting you were editing, and each category remembers its position. The updater uses a dark TV layout with clear white focus highlighting and no colored outline. Install over your existing Medusa to keep your settings. See [CHANGELOG.md](CHANGELOG.md).
+Release notes are shown in Russian when Medusa uses Russian, and in English otherwise. They appear in both startup update notifications and the manual update screen. The connection-error screen also provides an **Update Medusa** action.
 
 ## Downloads
 
