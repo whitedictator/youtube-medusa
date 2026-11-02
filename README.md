@@ -20,11 +20,11 @@ Availability depends on the source video, language pair and translation service.
 
 Dubbing is **off by default**. Medusa Fix is **on by default**; updates preserve your saved preference.
 
-## Current release: 80.7
+## Current release: 80.8
 
-Version 80.7 adds an **AFR stats** button at the left of the native player controls. Select the ⓘ button to display video FPS measured from decoder timestamps, the current display resolution and refresh rate reported by Android, and AFR status. Select the same button again to hide the indicator. It is hidden by default and on a fresh app start.
+Version 80.8 improves **Medusa Fix** with a gentle TLS fallback, stronger video-connection learning and bounded recovery from prolonged playback stalls. Existing tactics and remembered successful choices are retained. Confirmed failures remove saved priority so another tactic can be selected and remembered. Slow incoming media traffic, pause and seeking do not trigger recovery; a brief notice appears when an intervention actually happens.
 
-Statistics work even with AFR disabled, and do not toggle AFR or change display mode. AFR remains experimental and off by default; enable it separately in **Settings → YouTube Medusa → AFR: match frame rate**. Physical fractional switching still needs TV testing. Install over your existing Medusa to preserve settings. See [CHANGELOG.md](CHANGELOG.md).
+The YouTube activity now hides system bars on boxes running ordinary Android, without changing video aspect ratio. The player also retains the left-side **ⓘ AFR stats** toggle from 80.7. Statistics are hidden by default; AFR remains experimental and off by default. Install over your existing Medusa to retain preferences. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Downloads
 
@@ -66,7 +66,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.7, emulator checks cover player remote navigation, the statistics toggle and source-FPS/display-mode reporting. Android 9 checks cover read-only statistics while AFR is off and preservation of AFR restoration behavior. Both test displays expose only 1920×1080 at 60 Hz; physical fractional switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for exact checks.
+For 80.8, deterministic and Android socket-fixture tests cover tactic replacement, bounded stall recovery, protection of slow media traffic and unchanged TLS handshake bytes. Ordinary-network emulator playback checks passed on Android 9 and Android 13 during development. These checks do not demonstrate bypass effectiveness: the new fallback still needs testing on restricted networks. The Ugoos X3 black-screen report is not confirmed fixed. Physical fractional AFR switching, HDR and HDMI receiver behavior remain unverified. See the release's `validation-public.json` for exact scope.
 
 ## Credits
 

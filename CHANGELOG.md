@@ -1,5 +1,20 @@
 # Changelog
 
+## 80.8 — 2026-11-02
+
+- Add a gentle two-record TLS fallback after the existing connection tactics; preserve the existing order and saved successful choices.
+- Strengthen video-tactic learning: require at least 64 KiB of additional server traffic and a connection age of three seconds, rather than learning from a small initial response alone.
+- Detect prolonged playback waiting without timeline progress and retire stalled media tunnels so the native player can retry with another tactic.
+- Withdraw the failed tactic's saved priority and remember a successful replacement for subsequent connections and app restarts.
+- Leave connections alone while media data is arriving, including slow transfers; exclude user pause, seeking and ended playback from stall recovery.
+- Limit recovery to two actual interventions per video, at least one minute apart. No-op inspections do not exhaust that budget.
+- Show a brief Russian/English Medusa Fix notice when a recovery actually occurs, without taking remote focus.
+- Add local player-state diagnostics for investigating black screens. No new background network probes.
+- Hide Android system bars in the YouTube activity on boxes running ordinary Android; reapply fullscreen on resume without changing video aspect ratio.
+
+Restricted-network effectiveness remains unverified; the Ugoos X3 black-screen report is not confirmed fixed.
+
+
 ## 80.7 — 2026-11-01
 
 - Add an **AFR stats** button at the left of the native TV player controls. Press it again to hide the indicator.
