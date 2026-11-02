@@ -66,7 +66,7 @@ Medusa checks the download checksum, package identity, version and signing certi
 
 Medusa is an experimental, unofficial project. All three variants retain Android 7+ compatibility packaging, including the ARM32 packaging previously installed on a Hi VHIX-55U169TSY with Android 9.
 
-For 80.10, remote-navigation tests on the Android 13 stand covered inline on/off choices, Russian/English target-language selection, saved values, return to the same setting, category re-entry and first-display settings preparation. Updater tests covered focused actions and navigation between release notes and the action column. Physical-TV testing of this layout remains outstanding. The Ugoos X3 playback report and physical fractional AFR/HDR compatibility are not claimed fixed. See `validation-public.json` for the exact scope.
+For 80.14, Android 13 stand checks covered ordinary playback, real SponsorBlock data and skipping after leaving Shorts, the focused skip offer, interface icons, and bounded Shorts preparation. A manual restricted-network run showed improved Shorts startup, with delays still possible during rapid scrolling. Update notes and the connection-error updater entry are checked separately. The Ugoos X3 playback report and physical fractional AFR/HDR compatibility are not claimed fixed. See `validation-public.json` for the exact scope.
 
 ## Credits
 

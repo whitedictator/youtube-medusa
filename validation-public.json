@@ -1,0 +1,65 @@
+{
+  "version": "7.24.300-medusa80.14",
+  "versionCode": 724300425,
+  "date": "2026-11-03",
+  "platform": "Android 13 ARM64 emulator",
+  "variantsBuilt": [
+    "universal",
+    "armeabi-v7a",
+    "arm64-v8a"
+  ],
+  "package": "local.rvxtv.youtube",
+  "sameSigningCertificate": true,
+  "androidCompatibilityPackaging": {
+    "minSdk": 24,
+    "targetSdk": 28,
+    "compressedNativeLibraries": true,
+    "signatureSchemes": [
+      "v1",
+      "v2",
+      "v3"
+    ]
+  },
+  "passedChecks": [
+    "transport policy freshness, persistence, host exceptions and network isolation",
+    "ordinary video playback",
+    "real SponsorBlock data and automatic skip after leaving Shorts",
+    "focused manual skip offer, OK and expiry without pausing playback",
+    "native notification contrast",
+    "interface icon restoration",
+    "bounded native Shorts preparation and low-memory safeguards",
+    "Medusa entry limited to main settings",
+    "Russian/English release-note selection and English fallback",
+    "connection-error updater button via remote with Medusa Fix enabled or disabled"
+  ],
+  "manualShorts": {
+    "enteredClips": 22,
+    "observedAdvancingStarts": 17,
+    "medianIdentityToAdvanceMs": 1001,
+    "within1100Ms": 11,
+    "maximumObservedMs": 4508,
+    "scope": "Different clips and manual dwell times; descriptive results, not a controlled same-video benchmark. Rapid scrolling can outrun preparation."
+  },
+  "limitations": [
+    "Not tested on every physical television or firmware.",
+    "Fractional AFR/HDR and the Ugoos X3 black-screen report are not claimed fixed.",
+    "Translation-service availability and individual language pairs are not guaranteed."
+  ],
+  "artifacts": {
+    "universal": {
+      "name": "YouTube-Medusa-80.14-universal.apk",
+      "size": 99440945,
+      "sha256": "012069a67896e09dfc0a510a71a7ecaeb082b500c673d292119fde93a70c85a9"
+    },
+    "armeabi-v7a": {
+      "name": "YouTube-Medusa-80.14-armeabi-v7a.apk",
+      "size": 49337943,
+      "sha256": "d2d5364c2aa04aa151bf6c61e382445c13d0538b161e5664fce93c26ce9dea98"
+    },
+    "arm64-v8a": {
+      "name": "YouTube-Medusa-80.14-arm64-v8a.apk",
+      "size": 63833669,
+      "sha256": "cf048f0cafe292f9f4ba8f6c89518b2b2f59ba13da97a7357ec1093d9a5292a6"
+    }
+  }
+}
